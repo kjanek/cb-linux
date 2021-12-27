@@ -15,7 +15,7 @@ function bootstrapFiles {
 
   # If the ChromeOS firmware utility doesn't exist, install it and other packages
   printq "Installing Dependencies"
-  sudo apt install -y vboot-kernel-utils arch-install-scripts git wget cgpt $FW_PACKAGE
+  sudo pacman -S arch-install-scripts git wget  $FW_PACKAGE
 
 
   # Download the kernel bzImage and the kernel modules (wget)

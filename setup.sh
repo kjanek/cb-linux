@@ -25,7 +25,8 @@ source utils/distros/${DISTRO}.sh
 set -e
 
 # Many much importance
-sudo apt install -y toilet
+# sudo pacman -S base-devel
+# yay -S toilet
 
 # Print 15 lines to "fake" clear the screen
 # shellcheck disable=SC2034
